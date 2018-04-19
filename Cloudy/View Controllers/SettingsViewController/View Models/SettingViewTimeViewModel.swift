@@ -33,6 +33,6 @@ struct SettingsViewTimeViewModel {
 }
 
 // only to make it explicit, it's empty as we have already declare the two required variables
-extension SettingsViewUnitsViewModel: SettingsRepresentable {
+extension SettingsViewTimeViewModel: SettingsRepresentable {
     
 }
