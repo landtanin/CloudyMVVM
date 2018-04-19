@@ -57,7 +57,7 @@ struct WeekViewViewModel {
         
     }
     
-    func windSpedd(for index: Int) -> String {
+    func windSpeed(for index: Int) -> String {
         
         let weatherDayData = weatherData[index]
         let windSpeed = weatherDayData.windSpeed
