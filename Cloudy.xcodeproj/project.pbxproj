@@ -31,6 +31,8 @@
 		CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B44B1D9FEB73006BFD6E /* JSONDecodable.swift */; };
 		CC89B4501D9FEC2E006BFD6E /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B44F1D9FEC2E006BFD6E /* WeatherData.swift */; };
 		CC89B4521D9FECBE006BFD6E /* WeatherDayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B4511D9FECBE006BFD6E /* WeatherDayData.swift */; };
+		F3313F3E2089DA8700047E87 /* WeatherDayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3313F3D2089DA8700047E87 /* WeatherDayViewViewModel.swift */; };
+		F3313F422089DEA400047E87 /* WeatherDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3313F412089DEA400047E87 /* WeatherDayRepresentable.swift */; };
 		F334CD4C20888734007E475B /* SettingViewTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4B20888734007E475B /* SettingViewTimeViewModel.swift */; };
 		F334CD4E20888B4E007E475B /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */; };
 		F334CD5020888B9B007E475B /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */; };
@@ -67,6 +69,8 @@
 		CC89B44B1D9FEB73006BFD6E /* JSONDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
 		CC89B44F1D9FEC2E006BFD6E /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		CC89B4511D9FECBE006BFD6E /* WeatherDayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDayData.swift; sourceTree = "<group>"; };
+		F3313F3D2089DA8700047E87 /* WeatherDayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewViewModel.swift; sourceTree = "<group>"; };
+		F3313F412089DEA400047E87 /* WeatherDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayRepresentable.swift; sourceTree = "<group>"; };
 		F334CD4B20888734007E475B /* SettingViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewTimeViewModel.swift; sourceTree = "<group>"; };
 		F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 		CC89B43E1D9FE58C006BFD6E /* Weather View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F3313F402089DE8300047E87 /* Protocols */,
 				CC89B43F1D9FE5BC006BFD6E /* DayViewController.swift */,
 				CC89B4411D9FE5C6006BFD6E /* WeekViewController.swift */,
 				CC7854CC1D9FF99700E7836D /* WeatherViewController.swift */,
@@ -299,6 +304,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		F3313F402089DE8300047E87 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F3313F412089DEA400047E87 /* WeatherDayRepresentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F334CD4A208886D3007E475B /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +335,7 @@
 			children = (
 				F3CD53132085E976002F3D2C /* DayViewViewModel.swift */,
 				F3C69F692087479B0042BBFC /* WeekViewViewModel.swift */,
+				F3313F3D2089DA8700047E87 /* WeatherDayViewViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -408,6 +422,7 @@
 				CC83E0D51F13BF3B00EB0CAC /* LocationsViewController.swift in Sources */,
 				F3CD53142085E976002F3D2C /* DayViewViewModel.swift in Sources */,
 				F334CD5020888B9B007E475B /* SettingsViewTemperatureViewModel.swift in Sources */,
+				F3313F3E2089DA8700047E87 /* WeatherDayViewViewModel.swift in Sources */,
 				F3C69F6A2087479B0042BBFC /* WeekViewViewModel.swift in Sources */,
 				CC89B4391D9FE3D0006BFD6E /* RootViewController.swift in Sources */,
 				CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */,
@@ -425,6 +440,7 @@
 				CC83E0DB1F13BFAB00EB0CAC /* LocationsViewLocationViewModel.swift in Sources */,
 				CC89B4401D9FE5BC006BFD6E /* DayViewController.swift in Sources */,
 				F3CD53162085F085002F3D2C /* UIImage.swift in Sources */,
+				F3313F422089DEA400047E87 /* WeatherDayRepresentable.swift in Sources */,
 				CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */,
 				CC83E0D81F13BF8000EB0CAC /* LocationRepresentable.swift in Sources */,
 				CC08B9DB1DA206EE00754A85 /* SettingsViewController.swift in Sources */,
