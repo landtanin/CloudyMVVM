@@ -37,10 +37,23 @@
 		F334CD4E20888B4E007E475B /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */; };
 		F334CD5020888B9B007E475B /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */; };
 		F334CD5320888E40007E475B /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD5220888E40007E475B /* SettingsRepresentable.swift */; };
+		F368AEFF208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */; };
+		F368AF01208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */; };
+		F368AF03208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */; };
 		F3C69F6A2087479B0042BBFC /* WeekViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C69F692087479B0042BBFC /* WeekViewViewModel.swift */; };
 		F3CD53142085E976002F3D2C /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD53132085E976002F3D2C /* DayViewViewModel.swift */; };
 		F3CD53162085F085002F3D2C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD53152085F085002F3D2C /* UIImage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3313F4C2089E16400047E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC89B40F1D9FE314006BFD6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC89B4161D9FE314006BFD6E;
+			remoteInfo = Cloudy;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CC08B9DA1DA206EE00754A85 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -71,10 +84,15 @@
 		CC89B4511D9FECBE006BFD6E /* WeatherDayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDayData.swift; sourceTree = "<group>"; };
 		F3313F3D2089DA8700047E87 /* WeatherDayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewViewModel.swift; sourceTree = "<group>"; };
 		F3313F412089DEA400047E87 /* WeatherDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayRepresentable.swift; sourceTree = "<group>"; };
+		F3313F472089E16400047E87 /* CloudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3313F4B2089E16400047E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F334CD4B20888734007E475B /* SettingViewTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewTimeViewModel.swift; sourceTree = "<group>"; };
 		F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
 		F334CD5220888E40007E475B /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
+		F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
+		F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
+		F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
 		F3C69F692087479B0042BBFC /* WeekViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModel.swift; sourceTree = "<group>"; };
 		F3CD53132085E976002F3D2C /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		F3CD53152085F085002F3D2C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -82,6 +100,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC89B4141D9FE314006BFD6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3313F442089E16400047E87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -176,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				CC89B4191D9FE314006BFD6E /* Cloudy */,
+				F3313F482089E16400047E87 /* CloudyTests */,
 				CC89B4181D9FE314006BFD6E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				CC89B4171D9FE314006BFD6E /* Cloudy.app */,
+				F3313F472089E16400047E87 /* CloudyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -312,6 +339,49 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		F3313F482089E16400047E87 /* CloudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3313F522089E1A600047E87 /* Stubs */,
+				F3313F532089E21100047E87 /* Extensions */,
+				F3313F542089E21F00047E87 /* Test Cases */,
+				F3313F512089E19100047E87 /* Supporting Files */,
+			);
+			path = CloudyTests;
+			sourceTree = "<group>";
+		};
+		F3313F512089E19100047E87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3313F4B2089E16400047E87 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3313F522089E1A600047E87 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		F3313F532089E21100047E87 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3313F542089E21F00047E87 /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */,
+				F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */,
+				F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */,
+			);
+			path = "Test Cases";
+			sourceTree = "<group>";
+		};
 		F334CD4A208886D3007E475B /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,14 +430,32 @@
 			productReference = CC89B4171D9FE314006BFD6E /* Cloudy.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F3313F462089E16400047E87 /* CloudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3313F4E2089E16400047E87 /* Build configuration list for PBXNativeTarget "CloudyTests" */;
+			buildPhases = (
+				F3313F432089E16400047E87 /* Sources */,
+				F3313F442089E16400047E87 /* Frameworks */,
+				F3313F452089E16400047E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3313F4D2089E16400047E87 /* PBXTargetDependency */,
+			);
+			name = CloudyTests;
+			productName = CloudyTests;
+			productReference = F3313F472089E16400047E87 /* CloudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CC89B40F1D9FE314006BFD6E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0900;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Cocoacasts;
 				TargetAttributes = {
 					CC89B4161D9FE314006BFD6E = {
@@ -375,6 +463,13 @@
 						DevelopmentTeam = MT4FY7T8RH;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+					};
+					F3313F462089E16400047E87 = {
+						CreatedOnToolsVersion = 9.3;
+						DevelopmentTeam = MT4FY7T8RH;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC89B4161D9FE314006BFD6E;
 					};
 				};
 			};
@@ -392,6 +487,7 @@
 			projectRoot = "";
 			targets = (
 				CC89B4161D9FE314006BFD6E /* Cloudy */,
+				F3313F462089E16400047E87 /* CloudyTests */,
 			);
 		};
 /* End PBXProject section */
@@ -404,6 +500,13 @@
 				CC89B43C1D9FE3D0006BFD6E /* LaunchScreen.storyboard in Resources */,
 				CC89B43B1D9FE3D0006BFD6E /* Assets.xcassets in Resources */,
 				CC89B43D1D9FE3D0006BFD6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3313F452089E16400047E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +550,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F3313F432089E16400047E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F368AF01208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift in Sources */,
+				F368AF03208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift in Sources */,
+				F368AEFF208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3313F4D2089E16400047E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC89B4161D9FE314006BFD6E /* Cloudy */;
+			targetProxy = F3313F4C2089E16400047E87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CC89B4271D9FE314006BFD6E /* Debug */ = {
@@ -463,6 +584,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -470,6 +592,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -519,6 +642,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -526,6 +650,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -583,6 +708,59 @@
 			};
 			name = Release;
 		};
+		F3313F4F2089E16400047E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MT4FY7T8RH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CloudyTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.forestrock.CloudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
+			};
+			name = Debug;
+		};
+		F3313F502089E16400047E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MT4FY7T8RH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "CloudyTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.forestrock.CloudyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cloudy.app/Cloudy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,6 +778,15 @@
 			buildConfigurations = (
 				CC89B42A1D9FE314006BFD6E /* Debug */,
 				CC89B42B1D9FE314006BFD6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3313F4E2089E16400047E87 /* Build configuration list for PBXNativeTarget "CloudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3313F4F2089E16400047E87 /* Debug */,
+				F3313F502089E16400047E87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

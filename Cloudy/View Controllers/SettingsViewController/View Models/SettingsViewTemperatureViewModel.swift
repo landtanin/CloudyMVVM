@@ -23,7 +23,7 @@ struct SettingsViewTemperatureViewModel {
     var text: String {
         switch temperatureNotation {
         case .celsius:
-            return "Celcius"
+            return "Celsius"
         case .fahrenheit:
             return "Fahrenheit"
         }
