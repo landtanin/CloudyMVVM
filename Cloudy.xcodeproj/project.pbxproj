@@ -37,6 +37,10 @@
 		F334CD4E20888B4E007E475B /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */; };
 		F334CD5020888B9B007E475B /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */; };
 		F334CD5320888E40007E475B /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD5220888E40007E475B /* SettingsRepresentable.swift */; };
+		F35A543C208F1E03005179C7 /* darksky.json in Resources */ = {isa = PBXBuildFile; fileRef = F35A543B208F1E03005179C7 /* darksky.json */; };
+		F35A543E208F1E47005179C7 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A543D208F1E47005179C7 /* XCTestCase.swift */; };
+		F35A5440208F1F92005179C7 /* DayViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A543F208F1F92005179C7 /* DayViewViewModelTests.swift */; };
+		F35A5442208F27E3005179C7 /* WeekViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A5441208F27E3005179C7 /* WeekViewViewModelTests.swift */; };
 		F368AEFF208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */; };
 		F368AF01208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */; };
 		F368AF03208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */; };
@@ -90,6 +94,10 @@
 		F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
 		F334CD5220888E40007E475B /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
+		F35A543B208F1E03005179C7 /* darksky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darksky.json; sourceTree = "<group>"; };
+		F35A543D208F1E47005179C7 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		F35A543F208F1F92005179C7 /* DayViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModelTests.swift; sourceTree = "<group>"; };
+		F35A5441208F27E3005179C7 /* WeekViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModelTests.swift; sourceTree = "<group>"; };
 		F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
 		F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
 		F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
@@ -361,6 +369,7 @@
 		F3313F522089E1A600047E87 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				F35A543B208F1E03005179C7 /* darksky.json */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -368,6 +377,7 @@
 		F3313F532089E21100047E87 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F35A543D208F1E47005179C7 /* XCTestCase.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,6 +388,8 @@
 				F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */,
 				F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */,
 				F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */,
+				F35A543F208F1F92005179C7 /* DayViewViewModelTests.swift */,
+				F35A5441208F27E3005179C7 /* WeekViewViewModelTests.swift */,
 			);
 			path = "Test Cases";
 			sourceTree = "<group>";
@@ -507,6 +519,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35A543C208F1E03005179C7 /* darksky.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,9 +567,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F35A5440208F1F92005179C7 /* DayViewViewModelTests.swift in Sources */,
 				F368AF01208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift in Sources */,
 				F368AF03208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift in Sources */,
+				F35A543E208F1E47005179C7 /* XCTestCase.swift in Sources */,
 				F368AEFF208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift in Sources */,
+				F35A5442208F27E3005179C7 /* WeekViewViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
