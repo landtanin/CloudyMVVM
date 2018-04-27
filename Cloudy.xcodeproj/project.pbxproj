@@ -37,6 +37,7 @@
 		F334CD4E20888B4E007E475B /* SettingsViewUnitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */; };
 		F334CD5020888B9B007E475B /* SettingsViewTemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */; };
 		F334CD5320888E40007E475B /* SettingsRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F334CD5220888E40007E475B /* SettingsRepresentable.swift */; };
+		F3385CF9209315DA0073AAD8 /* AddLocationViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3385CF8209315DA0073AAD8 /* AddLocationViewViewModel.swift */; };
 		F339F77B20906F2F00FB39B1 /* WeatherDayViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339F77A20906F2F00FB39B1 /* WeatherDayViewViewModelTests.swift */; };
 		F35A543C208F1E03005179C7 /* darksky.json in Resources */ = {isa = PBXBuildFile; fileRef = F35A543B208F1E03005179C7 /* darksky.json */; };
 		F35A543E208F1E47005179C7 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A543D208F1E47005179C7 /* XCTestCase.swift */; };
@@ -95,6 +96,7 @@
 		F334CD4D20888B4E007E475B /* SettingsViewUnitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModel.swift; sourceTree = "<group>"; };
 		F334CD4F20888B9B007E475B /* SettingsViewTemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModel.swift; sourceTree = "<group>"; };
 		F334CD5220888E40007E475B /* SettingsRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepresentable.swift; sourceTree = "<group>"; };
+		F3385CF8209315DA0073AAD8 /* AddLocationViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewViewModel.swift; sourceTree = "<group>"; };
 		F339F77A20906F2F00FB39B1 /* WeatherDayViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayViewViewModelTests.swift; sourceTree = "<group>"; };
 		F35A543B208F1E03005179C7 /* darksky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = darksky.json; sourceTree = "<group>"; };
 		F35A543D208F1E47005179C7 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		CC83E0DF1F13BFDF00EB0CAC /* Add Location View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F3385CF7209315CD0073AAD8 /* View Models */,
 				CC83E0E01F13C01300EB0CAC /* AddLocationViewController.swift */,
 			);
 			path = "Add Location View Controller";
@@ -415,6 +418,14 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		F3385CF7209315CD0073AAD8 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3385CF8209315DA0073AAD8 /* AddLocationViewViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		F3CD53122085E951002F3D2C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,6 +557,7 @@
 				CC89B4391D9FE3D0006BFD6E /* RootViewController.swift in Sources */,
 				CC89B44C1D9FEB73006BFD6E /* JSONDecodable.swift in Sources */,
 				CC89B4451D9FE897006BFD6E /* DataManager.swift in Sources */,
+				F3385CF9209315DA0073AAD8 /* AddLocationViewViewModel.swift in Sources */,
 				CC83E0E11F13C01300EB0CAC /* AddLocationViewController.swift in Sources */,
 				CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */,
 				CC89B4381D9FE3D0006BFD6E /* AppDelegate.swift in Sources */,
