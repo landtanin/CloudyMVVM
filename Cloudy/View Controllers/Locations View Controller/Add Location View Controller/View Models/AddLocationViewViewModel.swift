@@ -9,7 +9,6 @@
 import RxSwift
 import RxCocoa
 import Foundation
-import CoreLocation
 
 class AddLocationViewViewModel {
     
@@ -26,11 +25,13 @@ class AddLocationViewViewModel {
     
     // MARK: -
     
-    private lazy var geocoder = CLGeocoder()
+    private let locationService: LocationService
     
     private let disposeBag = DisposeBag()
     
-    init(query: Driver<String>){ // Driver is read-only stream
+    init(query: Driver<String>, locationService: LocationService){ // Driver is read-only stream
+        self.locationService = locationService
+        
         query
             .throttle(0.5) // limit the number of request that are sent in a period of time
             .distinctUntilChanged()  // to prevent sending the request with the same query
@@ -60,25 +61,14 @@ class AddLocationViewViewModel {
         
         _querying.accept(true)
         
-        geocoder.geocodeAddressString(addressString) { [weak self] (placemarks, error) in
-            var locations: [Location] = []
-            
+        // Geocode Address String
+        locationService.geocode(addressString: addressString) { [weak self] (locations, error) in
             self?._querying.accept(false)
-            
-            if let error = error {
-                print("Unable to Forward Geocode Address \(error)")
-            } else if let _placemarks = placemarks {
-                
-                locations = _placemarks.flatMap({ (placemark) -> Location? in
-                    guard let name = placemark.name else { return nil }
-                    guard let location = placemark.location else {return nil}
-                    return Location(name: name, latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-                })
-                
-            }
-            
             self?._locations.accept(locations)
             
+            if let error = error {
+                print("Unable to Forward Geocode Address (\(error)")
+            }
         }
         
     }

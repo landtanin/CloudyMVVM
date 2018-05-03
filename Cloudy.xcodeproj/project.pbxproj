@@ -48,6 +48,8 @@
 		F368AEFF208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */; };
 		F368AF01208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */; };
 		F368AF03208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */; };
+		F3773D04209B034100540BBE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3773D03209B034100540BBE /* LocationService.swift */; };
+		F3773D07209B050E00540BBE /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3773D06209B050E00540BBE /* Geocoder.swift */; };
 		F3C69F6A2087479B0042BBFC /* WeekViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C69F692087479B0042BBFC /* WeekViewViewModel.swift */; };
 		F3CD53142085E976002F3D2C /* DayViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD53132085E976002F3D2C /* DayViewViewModel.swift */; };
 		F3CD53162085F085002F3D2C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CD53152085F085002F3D2C /* UIImage.swift */; };
@@ -113,6 +115,8 @@
 		F368AEFE208DD2C300DCCEEE /* SettingsViewTimeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTimeViewModelTests.swift; sourceTree = "<group>"; };
 		F368AF00208DD96800DCCEEE /* SettingsViewUnitsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewUnitsViewModelTests.swift; sourceTree = "<group>"; };
 		F368AF02208DDB9600DCCEEE /* SettingsViewTemperatureViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewTemperatureViewModelTests.swift; sourceTree = "<group>"; };
+		F3773D03209B034100540BBE /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		F3773D06209B050E00540BBE /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 		F3C69F692087479B0042BBFC /* WeekViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekViewViewModel.swift; sourceTree = "<group>"; };
 		F3CD53132085E976002F3D2C /* DayViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewViewModel.swift; sourceTree = "<group>"; };
 		F3CD53152085F085002F3D2C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 		CC89B4191D9FE314006BFD6E /* Cloudy */ = {
 			isa = PBXGroup;
 			children = (
+				F3773D05209B050000540BBE /* Services */,
 				CC89B42C1D9FE3D0006BFD6E /* Application Delegate */,
 				CC89B42E1D9FE3D0006BFD6E /* View Controllers */,
 				CC89B4461D9FE8B6006BFD6E /* Configuration */,
@@ -362,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				CC89B44B1D9FEB73006BFD6E /* JSONDecodable.swift */,
+				F3773D03209B034100540BBE /* LocationService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -456,6 +462,14 @@
 				F3385CF8209315DA0073AAD8 /* AddLocationViewViewModel.swift */,
 			);
 			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F3773D05209B050000540BBE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3773D06209B050E00540BBE /* Geocoder.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		F3CD53122085E951002F3D2C /* View Models */ = {
@@ -709,6 +723,7 @@
 				F3385CF9209315DA0073AAD8 /* AddLocationViewViewModel.swift in Sources */,
 				CC83E0E11F13C01300EB0CAC /* AddLocationViewController.swift in Sources */,
 				CC08B9DE1DA20DB400754A85 /* SettingsTableViewCell.swift in Sources */,
+				F3773D07209B050E00540BBE /* Geocoder.swift in Sources */,
 				CC89B4381D9FE3D0006BFD6E /* AppDelegate.swift in Sources */,
 				F334CD5320888E40007E475B /* SettingsRepresentable.swift in Sources */,
 				CC89B4521D9FECBE006BFD6E /* WeatherDayData.swift in Sources */,
@@ -719,6 +734,7 @@
 				CC83E0DE1F13BFD300EB0CAC /* LocationTableViewCell.swift in Sources */,
 				CC83E0DB1F13BFAB00EB0CAC /* LocationsViewLocationViewModel.swift in Sources */,
 				CC89B4401D9FE5BC006BFD6E /* DayViewController.swift in Sources */,
+				F3773D04209B034100540BBE /* LocationService.swift in Sources */,
 				F3CD53162085F085002F3D2C /* UIImage.swift in Sources */,
 				F3313F422089DEA400047E87 /* WeatherDayRepresentable.swift in Sources */,
 				CC08B9E11DA2169400754A85 /* UserDefaults.swift in Sources */,
